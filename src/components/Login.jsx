@@ -35,14 +35,14 @@ export const Login = () => {
         let x = '91';
         if(phonenumber(e.target.number.value)){
            x = x.concat(e.target.number.value);
-        }
         if(clicked != true){
           alert("click the enable location button ");}
           else{
         console.log("hello" ,latitude , longitude, x);
         setregistered(!register);
         const qt = await axios.post('https://quote-generator-5ox7.onrender.com/weather',{latitude : latitude, longitude:longitude , phnnumber : x });
-          } 
+          }
+        }
       }
 
       async function handlemanual(e){
@@ -55,11 +55,11 @@ export const Login = () => {
         console.log("phn",phn);
         if(phonenumber(phn)){
            x = x.concat(phn);
-        }
         console.log("hello" ,latitude , longitude,phn)
         setregistered(false);
         await axios.post('https://quote-generator-5ox7.onrender.com/manual',{latitude : latitude, longitude:longitude , phnnumber : x });
       }
+              }
       }
 
   return (
