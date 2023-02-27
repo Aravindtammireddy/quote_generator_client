@@ -75,7 +75,7 @@ export const Login = () => {
             </div>
             </form>
             </div>
-           : <div className="inputs">hey check you whatsappp</div> }
+           : <div className="inputs"><h1>Hey you registered for receiving daily notifications</h1></div> }
     </>
   )
 }
